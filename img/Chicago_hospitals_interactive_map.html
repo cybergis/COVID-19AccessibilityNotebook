@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7ac4f385ee5b4ebfb5cd6d797093293b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    <div style="position: fixed; width: 20%; heigh: auto;
+                            bottom: 10px; left: 10px;
+                            solid grey; z-index:9999; font-size:14px;
+                            ">&nbsp; Legend<br>&nbsp; <i class="fa fa-circle" style="font-size:10px;color: #B7425E"></i>&nbsp;GENERAL ACUTE CARE<br>&nbsp; <i class="fa fa-circle" style="font-size:10px;color: #5E13AF"></i>&nbsp;LONG TERM CARE<br></div>
+    
+            <div class="folium-map" id="map_7ac4f385ee5b4ebfb5cd6d797093293b" ></div>
+        
+</body>
+<script>    
+    
+            var map_7ac4f385ee5b4ebfb5cd6d797093293b = L.map(
+                "map_7ac4f385ee5b4ebfb5cd6d797093293b",
+                {
+                    center: [41.85, -87.65],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_777946aa4ecf4b8e8316efc1806a91a5 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+            var circle_marker_3009be4c2893487dbf9b9e3b5220d855 = L.circleMarker(
+                [41.69222644400003, -87.62535567799993],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_95d94fee3dfa45d6b0b7e79b2021edab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_edb125dbccfc4651be8abe3871e9b2be = $(`<div id="html_edb125dbccfc4651be8abe3871e9b2be" style="width: 100.0%; height: 100.0%;">ROSELAND COMMUNITY HOSPITAL 115</div>`)[0];
+            popup_95d94fee3dfa45d6b0b7e79b2021edab.setContent(html_edb125dbccfc4651be8abe3871e9b2be);
+        
+
+        circle_marker_3009be4c2893487dbf9b9e3b5220d855.bindPopup(popup_95d94fee3dfa45d6b0b7e79b2021edab)
+        ;
+
+        
+    
+    
+            var circle_marker_98108b60a09c4e0da06f22916e1853e7 = L.circleMarker(
+                [41.89140140400007, -87.77617956399996],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_a10aa3e54afa4673bbfd52245567086e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc1f41d6fcfe4d72b75c707c0e48cf4c = $(`<div id="html_fc1f41d6fcfe4d72b75c707c0e48cf4c" style="width: 100.0%; height: 100.0%;">WEST SUBURBAN MEDICAL CENTER 172</div>`)[0];
+            popup_a10aa3e54afa4673bbfd52245567086e.setContent(html_fc1f41d6fcfe4d72b75c707c0e48cf4c);
+        
+
+        circle_marker_98108b60a09c4e0da06f22916e1853e7.bindPopup(popup_a10aa3e54afa4673bbfd52245567086e)
+        ;
+
+        
+    
+    
+            var circle_marker_b543ec3378f74352b248e441165a0c21 = L.circleMarker(
+                [41.831983321000045, -87.79215670099995],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_93d45086dfbe437399e717f475c1aec5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cfb6af1f4a2b4d608de40e94ca9407dc = $(`<div id="html_cfb6af1f4a2b4d608de40e94ca9407dc" style="width: 100.0%; height: 100.0%;">MACNEAL  HOSPITAL 371</div>`)[0];
+            popup_93d45086dfbe437399e717f475c1aec5.setContent(html_cfb6af1f4a2b4d608de40e94ca9407dc);
+        
+
+        circle_marker_b543ec3378f74352b248e441165a0c21.bindPopup(popup_93d45086dfbe437399e717f475c1aec5)
+        ;
+
+        
+    
+    
+            var circle_marker_7e07490bcc5f43d0bdbc57e8de3915bd = L.circleMarker(
+                [41.945445508000034, -87.76783591299996],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_27f5f07eb6dd4e8aa725cb870b2aee97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9613847e0f244fc89b37c168947ccc41 = $(`<div id="html_9613847e0f244fc89b37c168947ccc41" style="width: 100.0%; height: 100.0%;">COMMUNITY FIRST MEDICAL CENTER 279</div>`)[0];
+            popup_27f5f07eb6dd4e8aa725cb870b2aee97.setContent(html_9613847e0f244fc89b37c168947ccc41);
+        
+
+        circle_marker_7e07490bcc5f43d0bdbc57e8de3915bd.bindPopup(popup_27f5f07eb6dd4e8aa725cb870b2aee97)
+        ;
+
+        
+    
+    
+            var circle_marker_3059e05b18c14519a054debec030b600 = L.circleMarker(
+                [41.86966877400004, -87.67051537299994],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_5a17836b440e480385507555e5a3a58d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24d23e29b690416e8f78a1ca7a9bc9ce = $(`<div id="html_24d23e29b690416e8f78a1ca7a9bc9ce" style="width: 100.0%; height: 100.0%;">UNIVERSITY OF ILLINOIS HOSPITAL 483</div>`)[0];
+            popup_5a17836b440e480385507555e5a3a58d.setContent(html_24d23e29b690416e8f78a1ca7a9bc9ce);
+        
+
+        circle_marker_3059e05b18c14519a054debec030b600.bindPopup(popup_5a17836b440e480385507555e5a3a58d)
+        ;
+
+        
+    
+    
+            var circle_marker_1597933576ca4f899931736bd141b2e1 = L.circleMarker(
+                [41.89062151400004, -87.70787846899998],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_9128a48c7b844f92a335c0f24ac83f82 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_acd5d903bb2148f6b72e5e1c0920247a = $(`<div id="html_acd5d903bb2148f6b72e5e1c0920247a" style="width: 100.0%; height: 100.0%;">SACRED HEART HOSPITAL 119</div>`)[0];
+            popup_9128a48c7b844f92a335c0f24ac83f82.setContent(html_acd5d903bb2148f6b72e5e1c0920247a);
+        
+
+        circle_marker_1597933576ca4f899931736bd141b2e1.bindPopup(popup_9128a48c7b844f92a335c0f24ac83f82)
+        ;
+
+        
+    
+    
+            var circle_marker_ddd8ddee95834f068ffe9cfd0ada603e = L.circleMarker(
+                [41.907585583000056, -87.68631009599994],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_bf2fec1115a84371a8a6d2fdd662326a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35cffd65912542dcb3f0cb5a1d31945b = $(`<div id="html_35cffd65912542dcb3f0cb5a1d31945b" style="width: 100.0%; height: 100.0%;">PRESENCE SAINT ELIZABETH HOSPITAL 493</div>`)[0];
+            popup_bf2fec1115a84371a8a6d2fdd662326a.setContent(html_35cffd65912542dcb3f0cb5a1d31945b);
+        
+
+        circle_marker_ddd8ddee95834f068ffe9cfd0ada603e.bindPopup(popup_bf2fec1115a84371a8a6d2fdd662326a)
+        ;
+
+        
+    
+    
+            var circle_marker_30358c8e012a4efdb56d7c04310388da = L.circleMarker(
+                [41.96646835400002, -87.64962680799992],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_df7df2e39e1847f5a39f39fc986c79ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a014a8702714ec88154ae4cc37eaf37 = $(`<div id="html_6a014a8702714ec88154ae4cc37eaf37" style="width: 100.0%; height: 100.0%;">LOUIS A WEISS MEMORIAL HOSPITAL 184</div>`)[0];
+            popup_df7df2e39e1847f5a39f39fc986c79ef.setContent(html_6a014a8702714ec88154ae4cc37eaf37);
+        
+
+        circle_marker_30358c8e012a4efdb56d7c04310388da.bindPopup(popup_df7df2e39e1847f5a39f39fc986c79ef)
+        ;
+
+        
+    
+    
+            var circle_marker_5a89595fc65d45e896c97934f8477b54 = L.circleMarker(
+                [41.87457186000005, -87.66890981899996],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_c006dea1593c4d7d846ab3c00b5b9295 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad9053aee2ce468687827b2522a61f73 = $(`<div id="html_ad9053aee2ce468687827b2522a61f73" style="width: 100.0%; height: 100.0%;">RUSH UNIVERSITY MEDICAL CENTER 669</div>`)[0];
+            popup_c006dea1593c4d7d846ab3c00b5b9295.setContent(html_ad9053aee2ce468687827b2522a61f73);
+        
+
+        circle_marker_5a89595fc65d45e896c97934f8477b54.bindPopup(popup_c006dea1593c4d7d846ab3c00b5b9295)
+        ;
+
+        
+    
+    
+            var circle_marker_17938a6c5cd44b41a84012f16c2b3787 = L.circleMarker(
+                [41.757730612000046, -87.58523506399997],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_55514eb757404f05836228c6c1429a29 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_556f626a89c74c859ec5d3e3ec159cad = $(`<div id="html_556f626a89c74c859ec5d3e3ec159cad" style="width: 100.0%; height: 100.0%;">JACKSON PARK HOSPITAL 260</div>`)[0];
+            popup_55514eb757404f05836228c6c1429a29.setContent(html_556f626a89c74c859ec5d3e3ec159cad);
+        
+
+        circle_marker_17938a6c5cd44b41a84012f16c2b3787.bindPopup(popup_55514eb757404f05836228c6c1429a29)
+        ;
+
+        
+    
+    
+            var circle_marker_437b8cfb61414d75b1a3cabeb87bd809 = L.circleMarker(
+                [41.749327394000034, -87.56899687899994],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_83d9623a572c4cd8b7f2ebc688b3830b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d5c23d056a14bdaaf4f3e5b41b47230 = $(`<div id="html_8d5c23d056a14bdaaf4f3e5b41b47230" style="width: 100.0%; height: 100.0%;">SOUTH SHORE HOSPITAL 137</div>`)[0];
+            popup_83d9623a572c4cd8b7f2ebc688b3830b.setContent(html_8d5c23d056a14bdaaf4f3e5b41b47230);
+        
+
+        circle_marker_437b8cfb61414d75b1a3cabeb87bd809.bindPopup(popup_83d9623a572c4cd8b7f2ebc688b3830b)
+        ;
+
+        
+    
+    
+            var circle_marker_ee02f411c1c54319b96bd87311f82026 = L.circleMarker(
+                [41.900799838000054, -87.69909547699996],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_9c04915aa3f542db94faaf513af79135 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f224d4e3ffcd47629712a0aef5bc8b5d = $(`<div id="html_f224d4e3ffcd47629712a0aef5bc8b5d" style="width: 100.0%; height: 100.0%;">NORWEGIAN-AMERICAN HOSPITAL 155</div>`)[0];
+            popup_9c04915aa3f542db94faaf513af79135.setContent(html_f224d4e3ffcd47629712a0aef5bc8b5d);
+        
+
+        circle_marker_ee02f411c1c54319b96bd87311f82026.bindPopup(popup_9c04915aa3f542db94faaf513af79135)
+        ;
+
+        
+    
+    
+            var circle_marker_fff3481e441142df8c4ac4925e79c51c = L.circleMarker(
+                [41.86080972600008, -87.69433858299999],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_8e270142dd064c08ac0ab4dacae2e657 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9a00b982e844b9995aa80d81f68f2c8 = $(`<div id="html_d9a00b982e844b9995aa80d81f68f2c8" style="width: 100.0%; height: 100.0%;">MT SINAI HOSPITAL MEDICAL CENTER 290</div>`)[0];
+            popup_8e270142dd064c08ac0ab4dacae2e657.setContent(html_d9a00b982e844b9995aa80d81f68f2c8);
+        
+
+        circle_marker_fff3481e441142df8c4ac4925e79c51c.bindPopup(popup_8e270142dd064c08ac0ab4dacae2e657)
+        ;
+
+        
+    
+    
+            var circle_marker_272774afe7554da2a3cc53a5a72f9a47 = L.circleMarker(
+                [41.855214534000034, -87.69827696299996],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_89a74c2410ae40fe82c32caaa2efda26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aec3ca046135460ab5b357156ceff2e0 = $(`<div id="html_aec3ca046135460ab5b357156ceff2e0" style="width: 100.0%; height: 100.0%;">SAINT ANTHONY HOSPITAL 151</div>`)[0];
+            popup_89a74c2410ae40fe82c32caaa2efda26.setContent(html_aec3ca046135460ab5b357156ceff2e0);
+        
+
+        circle_marker_272774afe7554da2a3cc53a5a72f9a47.bindPopup(popup_89a74c2410ae40fe82c32caaa2efda26)
+        ;
+
+        
+    
+    
+            var circle_marker_2d21423147474b07bffbc185d3e3f7bf = L.circleMarker(
+                [41.87494489300008, -87.71227205399997],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5E13AF", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_ac5eb1640f94452294462910b85fbf04 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_81f12cb316754683a69937010a1eef5d = $(`<div id="html_81f12cb316754683a69937010a1eef5d" style="width: 100.0%; height: 100.0%;">RML HEALTH PROVIDERS LIMITED PARTNERSHIP - DBA RML CHICAGO 68</div>`)[0];
+            popup_ac5eb1640f94452294462910b85fbf04.setContent(html_81f12cb316754683a69937010a1eef5d);
+        
+
+        circle_marker_2d21423147474b07bffbc185d3e3f7bf.bindPopup(popup_ac5eb1640f94452294462910b85fbf04)
+        ;
+
+        
+    
+    
+            var circle_marker_9dd98acef97b40548faf244b29fe3c6c = L.circleMarker(
+                [41.778394561000034, -87.63360133899994],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_86226e8f62d3469ab9a086a33dae3fce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_709374dc2d3b4722a0811dddff0ad0ea = $(`<div id="html_709374dc2d3b4722a0811dddff0ad0ea" style="width: 100.0%; height: 100.0%;">ST BERNARD HOSPITAL 100</div>`)[0];
+            popup_86226e8f62d3469ab9a086a33dae3fce.setContent(html_709374dc2d3b4722a0811dddff0ad0ea);
+        
+
+        circle_marker_9dd98acef97b40548faf244b29fe3c6c.bindPopup(popup_86226e8f62d3469ab9a086a33dae3fce)
+        ;
+
+        
+    
+    
+            var circle_marker_1deb344f541b4702988ad50cd807b46e = L.circleMarker(
+                [41.975351554000035, -87.69946586999998],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_c8ddcc2b33904b6391189caefea95710 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f38868c9f3514f23a505096a75d8e2fc = $(`<div id="html_f38868c9f3514f23a505096a75d8e2fc" style="width: 100.0%; height: 100.0%;">SWEDISH COVENANT HOSPITAL 279</div>`)[0];
+            popup_c8ddcc2b33904b6391189caefea95710.setContent(html_f38868c9f3514f23a505096a75d8e2fc);
+        
+
+        circle_marker_1deb344f541b4702988ad50cd807b46e.bindPopup(popup_c8ddcc2b33904b6391189caefea95710)
+        ;
+
+        
+    
+    
+            var circle_marker_adea5305606e452d993a987c8f871a68 = L.circleMarker(
+                [41.98750029200005, -87.81354581999994],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_1bb26279ad7643439fdd15b8d08dbde9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1230c0be7217473d95b80666d085c48f = $(`<div id="html_1230c0be7217473d95b80666d085c48f" style="width: 100.0%; height: 100.0%;">RESURRECTION MEDICAL CENTER 402</div>`)[0];
+            popup_1bb26279ad7643439fdd15b8d08dbde9.setContent(html_1230c0be7217473d95b80666d085c48f);
+        
+
+        circle_marker_adea5305606e452d993a987c8f871a68.bindPopup(popup_1bb26279ad7643439fdd15b8d08dbde9)
+        ;
+
+        
+    
+    
+            var circle_marker_66851963aae2489986cb6f404b0fd468 = L.circleMarker(
+                [41.76940669100003, -87.69238032999993],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_c89a31ac22884df88eb2e2d0f6a8c3e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c4f02ecc92141ee84dd67958ef6f854 = $(`<div id="html_7c4f02ecc92141ee84dd67958ef6f854" style="width: 100.0%; height: 100.0%;">HOLY CROSS HOSPITAL 160</div>`)[0];
+            popup_c89a31ac22884df88eb2e2d0f6a8c3e1.setContent(html_7c4f02ecc92141ee84dd67958ef6f854);
+        
+
+        circle_marker_66851963aae2489986cb6f404b0fd468.bindPopup(popup_c89a31ac22884df88eb2e2d0f6a8c3e1)
+        ;
+
+        
+    
+    
+            var circle_marker_071aa2be5a4b4c40a391bbff5893e37e = L.circleMarker(
+                [41.93382070500007, -87.63706909399995],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_05cd98b199ea4e83ad316443f00a5e8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e09ba47717441d1ab771ee3cd3e1151 = $(`<div id="html_4e09ba47717441d1ab771ee3cd3e1151" style="width: 100.0%; height: 100.0%;">PRESENCE SAINT JOSEPH HOSPITAL 500</div>`)[0];
+            popup_05cd98b199ea4e83ad316443f00a5e8c.setContent(html_4e09ba47717441d1ab771ee3cd3e1151);
+        
+
+        circle_marker_071aa2be5a4b4c40a391bbff5893e37e.bindPopup(popup_05cd98b199ea4e83ad316443f00a5e8c)
+        ;
+
+        
+    
+    
+            var circle_marker_e1e8483ec6de4e34bec9efddfa62fabb = L.circleMarker(
+                [42.05641606200005, -87.74070961099993],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_cd1c9c1984aa4a5e8776030ec63da66d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e18405cb43464f35bd96005b553492d7 = $(`<div id="html_e18405cb43464f35bd96005b553492d7" style="width: 100.0%; height: 100.0%;">NORTHSHORE UNIVERSITY HEALTH SYSTEM SKOKIE HOSPITAL 234</div>`)[0];
+            popup_cd1c9c1984aa4a5e8776030ec63da66d.setContent(html_e18405cb43464f35bd96005b553492d7);
+        
+
+        circle_marker_e1e8483ec6de4e34bec9efddfa62fabb.bindPopup(popup_cd1c9c1984aa4a5e8776030ec63da66d)
+        ;
+
+        
+    
+    
+            var circle_marker_dddb9a335a514d06b3958df0c3ea97dd = L.circleMarker(
+                [41.87861801400004, -87.80335153299995],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_730184c79ad4464dac49e8fe8a8d0619 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8fc009e82b84335a543e13193ea95fa = $(`<div id="html_c8fc009e82b84335a543e13193ea95fa" style="width: 100.0%; height: 100.0%;">RUSH OAK PARK HOSPITAL 114</div>`)[0];
+            popup_730184c79ad4464dac49e8fe8a8d0619.setContent(html_c8fc009e82b84335a543e13193ea95fa);
+        
+
+        circle_marker_dddb9a335a514d06b3958df0c3ea97dd.bindPopup(popup_730184c79ad4464dac49e8fe8a8d0619)
+        ;
+
+        
+    
+    
+            var circle_marker_c370d10ce26e4d44a73ab94de15f6173 = L.circleMarker(
+                [41.872124573000065, -87.76408864999996],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_efcae146c13c4509a96ac3bb24196e48 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec789e17e0bb48e69d5d6a932ff0bc0f = $(`<div id="html_ec789e17e0bb48e69d5d6a932ff0bc0f" style="width: 100.0%; height: 100.0%;">LORETTO HOSPITAL 176</div>`)[0];
+            popup_efcae146c13c4509a96ac3bb24196e48.setContent(html_ec789e17e0bb48e69d5d6a932ff0bc0f);
+        
+
+        circle_marker_c370d10ce26e4d44a73ab94de15f6173.bindPopup(popup_efcae146c13c4509a96ac3bb24196e48)
+        ;
+
+        
+    
+    
+            var circle_marker_e6b7dba1a52546c89e6e77ea900bb5ae = L.circleMarker(
+                [41.788746851000035, -87.60433712599996],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_ce91b1913d204573a21ac4110ee0f7c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46b7368a7c5a44048f9d5be60f15e0d4 = $(`<div id="html_46b7368a7c5a44048f9d5be60f15e0d4" style="width: 100.0%; height: 100.0%;">THE UNIVERSITY OF CHICAGO MEDICAL CENTER 577</div>`)[0];
+            popup_ce91b1913d204573a21ac4110ee0f7c7.setContent(html_46b7368a7c5a44048f9d5be60f15e0d4);
+        
+
+        circle_marker_e6b7dba1a52546c89e6e77ea900bb5ae.bindPopup(popup_ce91b1913d204573a21ac4110ee0f7c7)
+        ;
+
+        
+    
+    
+            var circle_marker_450fca0fe6484e79b35aa220b3744653 = L.circleMarker(
+                [41.95518901600006, -87.65162123999995],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_723afdad4cc64ccfb654d33c4fa3165c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_062fe77ccaf14e10b6e64f4a75c741c9 = $(`<div id="html_062fe77ccaf14e10b6e64f4a75c741c9" style="width: 100.0%; height: 100.0%;">THOREK MEMORIAL HOSPITAL 134</div>`)[0];
+            popup_723afdad4cc64ccfb654d33c4fa3165c.setContent(html_062fe77ccaf14e10b6e64f4a75c741c9);
+        
+
+        circle_marker_450fca0fe6484e79b35aa220b3744653.bindPopup(popup_723afdad4cc64ccfb654d33c4fa3165c)
+        ;
+
+        
+    
+    
+            var circle_marker_4c0f80847f744b8a9c2b25c7a70cc914 = L.circleMarker(
+                [41.872334867000056, -87.67439845799998],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_72db836a02ad4815ac613d6ef05aec2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85ed5309c18c41c08284ed5be1032d87 = $(`<div id="html_85ed5309c18c41c08284ed5be1032d87" style="width: 100.0%; height: 100.0%;">JOHN H STROGER JR HOSPITAL 460</div>`)[0];
+            popup_72db836a02ad4815ac613d6ef05aec2d.setContent(html_85ed5309c18c41c08284ed5be1032d87);
+        
+
+        circle_marker_4c0f80847f744b8a9c2b25c7a70cc914.bindPopup(popup_72db836a02ad4815ac613d6ef05aec2d)
+        ;
+
+        
+    
+    
+            var circle_marker_5521f52d561a44fc8cb7ef79571c3c4c = L.circleMarker(
+                [41.84688958300005, -87.62149159799999],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_84a73a685ff9402590c2cc96f10d7617 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cbb56637c0cc486ab301b6fde28c5d51 = $(`<div id="html_cbb56637c0cc486ab301b6fde28c5d51" style="width: 100.0%; height: 100.0%;">MERCY HOSPITAL AND MEDICAL CENTER 421</div>`)[0];
+            popup_84a73a685ff9402590c2cc96f10d7617.setContent(html_cbb56637c0cc486ab301b6fde28c5d51);
+        
+
+        circle_marker_5521f52d561a44fc8cb7ef79571c3c4c.bindPopup(popup_84a73a685ff9402590c2cc96f10d7617)
+        ;
+
+        
+    
+    
+            var circle_marker_f80859f476de4a6db5c55d54b56ba69f = L.circleMarker(
+                [41.72146499900002, -87.69302887799996],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_89d131c9765940eb978c88ec2036fc79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e7921bdb5d348048853cc08c7d27d96 = $(`<div id="html_6e7921bdb5d348048853cc08c7d27d96" style="width: 100.0%; height: 100.0%;">LITTLE COMPANY OF MARY HOSPITAL 288</div>`)[0];
+            popup_89d131c9765940eb978c88ec2036fc79.setContent(html_6e7921bdb5d348048853cc08c7d27d96);
+        
+
+        circle_marker_f80859f476de4a6db5c55d54b56ba69f.bindPopup(popup_89d131c9765940eb978c88ec2036fc79)
+        ;
+
+        
+    
+    
+            var circle_marker_bad290bb8ebb4dc295f90c17b068063b = L.circleMarker(
+                [41.93674084800005, -87.65137166299996],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_ee538edc46514ce69aabf8e6f9b46e5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_12f6becbdb56468e8e2fc319957f4686 = $(`<div id="html_12f6becbdb56468e8e2fc319957f4686" style="width: 100.0%; height: 100.0%;">ADVOCATE ILLINOIS MASONIC MEDICAL CENTER 330</div>`)[0];
+            popup_ee538edc46514ce69aabf8e6f9b46e5b.setContent(html_12f6becbdb56468e8e2fc319957f4686);
+        
+
+        circle_marker_bad290bb8ebb4dc295f90c17b068063b.bindPopup(popup_ee538edc46514ce69aabf8e6f9b46e5b)
+        ;
+
+        
+    
+    
+            var circle_marker_83dc2bb106cb486fb527c535e0dfe0f3 = L.circleMarker(
+                [41.97308677300003, -87.67074305699997],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_a8bd4df745ec496faacc666609343419 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc7216b543c640bba3d3c9bb6a760a40 = $(`<div id="html_cc7216b543c640bba3d3c9bb6a760a40" style="width: 100.0%; height: 100.0%;">METHODIST HOSPITAL OF CHICAGO 189</div>`)[0];
+            popup_a8bd4df745ec496faacc666609343419.setContent(html_cc7216b543c640bba3d3c9bb6a760a40);
+        
+
+        circle_marker_83dc2bb106cb486fb527c535e0dfe0f3.bindPopup(popup_a8bd4df745ec496faacc666609343419)
+        ;
+
+        
+    
+    
+            var circle_marker_fe02d81a082c4d7a867d54696d418d05 = L.circleMarker(
+                [41.72169451700005, -87.73244224499997],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_a86cf028d20f477f8f53ea80c5b22233 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f92ce4fd46d44dafb0873a3be194d348 = $(`<div id="html_f92ce4fd46d44dafb0873a3be194d348" style="width: 100.0%; height: 100.0%;">ADVOCATE CHRIST HOSPITAL & MEDICAL CENTER 684</div>`)[0];
+            popup_a86cf028d20f477f8f53ea80c5b22233.setContent(html_f92ce4fd46d44dafb0873a3be194d348);
+        
+
+        circle_marker_fe02d81a082c4d7a867d54696d418d05.bindPopup(popup_a86cf028d20f477f8f53ea80c5b22233)
+        ;
+
+        
+    
+    
+            var circle_marker_090a1325510243b3a44e82ddaa07a924 = L.circleMarker(
+                [42.03880222600002, -87.84733438399996],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_189544df671e418383dc358439aa3cb6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b717287db6e42f58959db7cb6832ac7 = $(`<div id="html_1b717287db6e42f58959db7cb6832ac7" style="width: 100.0%; height: 100.0%;">ADVOCATE LUTHERAN GENERAL HOSPITAL 624</div>`)[0];
+            popup_189544df671e418383dc358439aa3cb6.setContent(html_1b717287db6e42f58959db7cb6832ac7);
+        
+
+        circle_marker_090a1325510243b3a44e82ddaa07a924.bindPopup(popup_189544df671e418383dc358439aa3cb6)
+        ;
+
+        
+    
+    
+            var circle_marker_58f6b572ecef4d8fb3a9dc15dd8c18cc = L.circleMarker(
+                [42.06829110600006, -87.99218163399996],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_4e412ebf9c0349d3b5b6d2842a19ca22 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e4388e938ac41688bfbb01535cd0edb = $(`<div id="html_6e4388e938ac41688bfbb01535cd0edb" style="width: 100.0%; height: 100.0%;">NORTHWEST COMMUNITY HOSPITAL 386</div>`)[0];
+            popup_4e412ebf9c0349d3b5b6d2842a19ca22.setContent(html_6e4388e938ac41688bfbb01535cd0edb);
+        
+
+        circle_marker_58f6b572ecef4d8fb3a9dc15dd8c18cc.bindPopup(popup_4e412ebf9c0349d3b5b6d2842a19ca22)
+        ;
+
+        
+    
+    
+            var circle_marker_db0de462013c49dfbcd6ce9e869960f1 = L.circleMarker(
+                [42.00465682300006, -88.01689227799996],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_081abda1e093487cb258a40c9f44ea22 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1529febe22614e19a2904cbe1054279e = $(`<div id="html_1529febe22614e19a2904cbe1054279e" style="width: 100.0%; height: 100.0%;">ALEXIAN BROTHERS MEDICAL CENTER 370</div>`)[0];
+            popup_081abda1e093487cb258a40c9f44ea22.setContent(html_1529febe22614e19a2904cbe1054279e);
+        
+
+        circle_marker_db0de462013c49dfbcd6ce9e869960f1.bindPopup(popup_081abda1e093487cb258a40c9f44ea22)
+        ;
+
+        
+    
+    
+            var circle_marker_b8460bfd382349c8ade87835f651b709 = L.circleMarker(
+                [41.89460771300002, -87.62102436599997],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_04aa20bc08b949c58190edd6b73989b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c570fde13a5942c392df5c61591c6257 = $(`<div id="html_c570fde13a5942c392df5c61591c6257" style="width: 100.0%; height: 100.0%;">NORTHWESTERN MEMORIAL HOSPITAL 885</div>`)[0];
+            popup_04aa20bc08b949c58190edd6b73989b9.setContent(html_c570fde13a5942c392df5c61591c6257);
+        
+
+        circle_marker_b8460bfd382349c8ade87835f651b709.bindPopup(popup_04aa20bc08b949c58190edd6b73989b9)
+        ;
+
+        
+    
+    
+            var circle_marker_86263f7c99664df0a60e1ffc6f3f735c = L.circleMarker(
+                [41.80267501300005, -87.61332387199997],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_929950a468b2475188d267efa5bb2f35 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62371b6547e5410391c9b540f37421d9 = $(`<div id="html_62371b6547e5410391c9b540f37421d9" style="width: 100.0%; height: 100.0%;">PROVIDENT HOSPITAL OF CHICAGO 25</div>`)[0];
+            popup_929950a468b2475188d267efa5bb2f35.setContent(html_62371b6547e5410391c9b540f37421d9);
+        
+
+        circle_marker_86263f7c99664df0a60e1ffc6f3f735c.bindPopup(popup_929950a468b2475188d267efa5bb2f35)
+        ;
+
+        
+    
+    
+            var circle_marker_b451772cc96740978d3beaabc6d26f6b = L.circleMarker(
+                [41.65811419400007, -87.67783028599996],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_30c24faf0d444d8db6c9eb891d9fa10a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_342c86f2218b4306894dbb54bc18b07d = $(`<div id="html_342c86f2218b4306894dbb54bc18b07d" style="width: 100.0%; height: 100.0%;">METROSOUTH MEDICAL CENTER 180</div>`)[0];
+            popup_30c24faf0d444d8db6c9eb891d9fa10a.setContent(html_342c86f2218b4306894dbb54bc18b07d);
+        
+
+        circle_marker_b451772cc96740978d3beaabc6d26f6b.bindPopup(popup_30c24faf0d444d8db6c9eb891d9fa10a)
+        ;
+
+        
+    
+    
+            var circle_marker_63ca95eb77c047d898bc1c5b281db669 = L.circleMarker(
+                [41.90253260800005, -87.68327658699995],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_846260bca4dd4353990762e6250b45ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_07db97517ad94b8c9d040c7b294539ac = $(`<div id="html_07db97517ad94b8c9d040c7b294539ac" style="width: 100.0%; height: 100.0%;">PRESENCE SAINT MARY OF NAZARETH HOSPITAL CENTER 493</div>`)[0];
+            popup_846260bca4dd4353990762e6250b45ee.setContent(html_07db97517ad94b8c9d040c7b294539ac);
+        
+
+        circle_marker_63ca95eb77c047d898bc1c5b281db669.bindPopup(popup_846260bca4dd4353990762e6250b45ee)
+        ;
+
+        
+    
+    
+            var circle_marker_244623987231423fb39e33d0b4dec506 = L.circleMarker(
+                [41.72650439300002, -87.56722618099997],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_7dbe1851a8104e40962e9f0eeb2c4a9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a09277523aea49b2be3f615c6bb94339 = $(`<div id="html_a09277523aea49b2be3f615c6bb94339" style="width: 100.0%; height: 100.0%;">ADVOCATE TRINITY HOSPITAL 188</div>`)[0];
+            popup_7dbe1851a8104e40962e9f0eeb2c4a9d.setContent(html_a09277523aea49b2be3f615c6bb94339);
+        
+
+        circle_marker_244623987231423fb39e33d0b4dec506.bindPopup(popup_7dbe1851a8104e40962e9f0eeb2c4a9d)
+        ;
+
+        
+    
+    
+            var circle_marker_8b8539c6a26e40c49d17ae48ca013798 = L.circleMarker(
+                [41.94024657500006, -87.72864369399997],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5E13AF", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_89a43c4e51a2443eb1bdfd5155a11799 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e7ded2fccde4bc6a0d7fc2706396127 = $(`<div id="html_3e7ded2fccde4bc6a0d7fc2706396127" style="width: 100.0%; height: 100.0%;">THC CHICAGO, INC. - DBA KINDRED HOSPITAL - CENTRAL 54</div>`)[0];
+            popup_89a43c4e51a2443eb1bdfd5155a11799.setContent(html_3e7ded2fccde4bc6a0d7fc2706396127);
+        
+
+        circle_marker_8b8539c6a26e40c49d17ae48ca013798.bindPopup(popup_89a43c4e51a2443eb1bdfd5155a11799)
+        ;
+
+        
+    
+    
+            var circle_marker_78567b5263d34e5282ae6b71d0d25174 = L.circleMarker(
+                [42.02438933700006, -87.68456805199997],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B7425E", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0.1}
+            ).addTo(map_7ac4f385ee5b4ebfb5cd6d797093293b);
+        
+    
+        var popup_881ea0fc79294de6b04e51ecda002255 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_880cdac1c83640979f05f6cc72052bc1 = $(`<div id="html_880cdac1c83640979f05f6cc72052bc1" style="width: 100.0%; height: 100.0%;">PRESENCE ST FRANCIS HOSPITAL 244</div>`)[0];
+            popup_881ea0fc79294de6b04e51ecda002255.setContent(html_880cdac1c83640979f05f6cc72052bc1);
+        
+
+        circle_marker_78567b5263d34e5282ae6b71d0d25174.bindPopup(popup_881ea0fc79294de6b04e51ecda002255)
+        ;
+
+        
+    
+</script>
