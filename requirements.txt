@@ -1,3 +1,4 @@
+folium
 geopandas
 networkx==2.4
 numpy
