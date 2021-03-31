@@ -1,0 +1,7 @@
+geopandas==0.8.1
+networkx==2.5
+numpy==1.19.4
+osmnx==0.16.2
+pandas==1.1.5
+tqdm==4.50.2
+Shapely==1.7.1

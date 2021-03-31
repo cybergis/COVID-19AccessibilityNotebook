@@ -1,8 +1,8 @@
 folium
 geopandas
-networkx==2.4
+networkx
 numpy
-osmnx==0.11.4
+osmnx
 pandas
 tqdm
 shapely

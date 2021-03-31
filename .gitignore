@@ -1,2 +1,4 @@
 Data/Illinois_Network.graphml # too big
-.ipynb_checkpoints/*
+.ipynb_checkpoints
+__pycache__
+results
