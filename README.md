@@ -1,4 +1,4 @@
-[![View on CyberGISXHub](img/ViewonCyberGISXHub.svg)](https://cybergisx.cigi.illinois.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcybergis%2FCOVID-19AccessibilityNotebook&urlpath=tree%2FCOVID-19AccessibilityNotebook%2FCOVID-19Acc.ipynb&branch=main)
+[![View on CyberGISXHub](img/ViewonCyberGISXHub.svg)](https://cybergisxhub.cigi.illinois.edu/notebook/rapidly-measuring-spatial-accessibility-of-covid-19-healthcare-resources-a-case-study-of-illinois-usa/)
 [![Open with CyberGISX](img/OpenwithCyberGISX.svg)](https://cybergisx.cigi.illinois.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcybergis%2FCOVID-19AccessibilityNotebook&urlpath=tree%2FCOVID-19AccessibilityNotebook%2FCOVID-19Acc.ipynb&branch=main)
 
 # Spatial Accessibility to ICU Beds and Ventilators in Illinois
