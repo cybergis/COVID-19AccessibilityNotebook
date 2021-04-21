@@ -51,14 +51,18 @@ Users need to provide the data and give the appropriate file names/paths in `app
 
 <a id="run-singularity"></a>
 
+***
+
+## Running the Job with Singularity
+
 A sample `singularity run` command can be seen in `singularity_run.sh` and looks like:
 
 ```
 singularity build spacc.simg docker://alexandermichels/spatialaccessjob:0.0.1
 singularity run \
-    --bind /data/keeling/a/michels9/COVID-19AccessibilityNotebook/job_sub/app_vars.py:/myapp/app_vars.py \
-    --bind /data/keeling/a/michels9/COVID-19AccessibilityNotebook/Data:/myapp/Data \
-    --bind /data/keeling/a/michels9/COVID-19AccessibilityNotebook/results:/myapp/results \
+    --bind /<my path to the app vars file>/app_vars.py:/myapp/app_vars.py \
+    --bind /<my path to the data folder>:/myapp/Data \
+    --bind /<where I want results to be stored on the disk>:/myapp/results \
     spacc.simg
 ```
 
@@ -66,8 +70,14 @@ Alternatively you can do all of it with a single command:
 
 ```
 singularity run \
-  --bind /data/keeling/a/michels9/COVID-19AccessibilityNotebook/job_sub/app_vars.py:/myapp/app_vars.py \
-  --bind /data/keeling/a/michels9/COVID-19AccessibilityNotebook/Data:/myapp/Data \
-  --bind /data/keeling/a/michels9/COVID-19AccessibilityNotebook/results:/myapp/results \
+  --bind /<my path to the app vars file>/app_vars.py:/myapp/app_vars.py \
+  --bind /<my path to the data folder>:/myapp/Data \
+  --bind /<where I want results to be stored on the disk>:/myapp/results \
   docker://alexandermichels/spatialaccessjob:0.0.1
 ```
+
+Your steps to do this are probably:
+
+1. Clone this repository.
+2. Ensure all of the data and paths exist (i.e. make a `results` folder, ensure the graphmls exist)
+3. Run the above commands with the correct paths.
