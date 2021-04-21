@@ -1,5 +1,10 @@
 # README
 
+## Table of Contents (TOC)
+
+* [Running the Job with Docker](#run-docker)
+* [Running the Job with Singularity](#run-singularity)
+
 ```
 > tree .
 .
@@ -26,7 +31,11 @@ Explanation:
 * `README.md` is the file you're reading
 * `run_in_docker.sh` runs the docker container assuming you set the volume paths appropriately
 
-## Running the Job:
+<a id="run-docker"></a>
+
+***
+
+## Running the Job with Docker:
 
 A sample `docker run` command can be seen in `run_in_docker.sh` and looks like:
 
@@ -39,3 +48,26 @@ docker run --name access \
 ```
 
 Users need to provide the data and give the appropriate file names/paths in `app_vars.py`
+
+<a id="run-singularity"></a>
+
+A sample `singularity run` command can be seen in `singularity_run.sh` and looks like:
+
+```
+singularity build spacc.simg docker://alexandermichels/spatialaccessjob:0.0.1
+singularity run \
+    --bind /data/keeling/a/michels9/COVID-19AccessibilityNotebook/job_sub/app_vars.py:/myapp/app_vars.py \
+    --bind /data/keeling/a/michels9/COVID-19AccessibilityNotebook/Data:/myapp/Data \
+    --bind /data/keeling/a/michels9/COVID-19AccessibilityNotebook/results:/myapp/results \
+    spacc.simg
+```
+
+Alternatively you can do all of it with a single command:
+
+```
+singularity run \
+  --bind /data/keeling/a/michels9/COVID-19AccessibilityNotebook/job_sub/app_vars.py:/myapp/app_vars.py \
+  --bind /data/keeling/a/michels9/COVID-19AccessibilityNotebook/Data:/myapp/Data \
+  --bind /data/keeling/a/michels9/COVID-19AccessibilityNotebook/results:/myapp/results \
+  docker://alexandermichels/spatialaccessjob:0.0.1
+```
