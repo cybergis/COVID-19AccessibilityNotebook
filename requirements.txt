@@ -1,8 +1,9 @@
-folium
-geopandas
-networkx
-numpy
-osmnx
-pandas
-tqdm
-shapely
+pandas==1.0.3
+numpy==1.18.1
+geopandas==0.7.0
+networkx==2.4
+osmnx==0.11.4
+shapely==1.7.0
+matplotlib==3.1.3
+tqdm==4.45.0
+folium==0.10.1
